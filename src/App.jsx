@@ -27,7 +27,7 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={
+        <Route exact path="/SukhSagarHotel/" element={
           <>
             <Hero />
             <AboutContainer />
