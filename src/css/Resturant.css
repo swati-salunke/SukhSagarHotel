@@ -1,0 +1,400 @@
+.resto-slider {
+    width: 100%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .resto-slider .slider {
+    width: 100%;
+    position: relative;
+  }
+  
+  .resto-slider .slider img {
+    width: 100%;
+    height: 650px;
+    display: block;
+  }
+  .resto-slider .slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with 50% opacity */
+    z-index: 1; /* Ensure it's above the image but below content inside slider */
+  }
+  .resturant-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px 0;
+  }
+  
+  .resto-body {
+    width: 90%;
+    padding-right: 40px;
+    font-family: 'Gilda Display', serif;
+  }
+  
+  .resto-body p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .resto-body .number
+  {
+    margin-top:-30px;
+    margin-left: 58px;
+  }
+  .info-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .hours, .dress-code, .terrace {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .resto-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resto-body ul li {
+    margin-bottom: 12px;
+  }
+  
+  .fa-clock-o {
+    margin-right: 5px;
+    /* Adjust spacing as needed */
+    color: #aa8453;
+    font-size: 22px;
+    font-weight: 100;
+  }
+  
+  .hours {
+    margin: 40px 0px;
+  }
+  
+  .dress-code {
+    margin-bottom: 35px;
+  }
+  
+  .center-bottom-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Added z-index for layering */
+    background-color: transparent;
+    border: 1.5px solid #ffffff34;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    animation: bounce 1s ease 2s infinite;
+  }
+  .center-bottom-button:hover {
+    background-color: transparent;
+    border: 1.5px solid #aa8453;
+  }
+  
+  .center-bottom-button::after {
+    content: '↓';
+    display:block;
+    color: #f1f1f1;
+  }
+  
+  .menu-container {
+    width: 100%;
+    height:auto;
+    color: #fff;
+    background-color: #222222;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .menu-container .slick-slider {
+    width: 70%;
+    margin-top: 40px;
+  }
+
+  .menu-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .menu-tab {
+    width: 80%;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 8px 20px;
+    margin: 1rem 2rem;
+    cursor: pointer;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  
+  .menu-tab-container {
+    width: auto !important;
+    margin: 0 10px;
+  }
+  
+  .menu-tab.active {
+    border: 1px solid #aa8453;
+  }
+  
+  .menu-container .sub-heading {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 8px;
+    color: #aa8453;
+  }
+  .menu-container .resto-heading
+  {
+    color: #fff;
+  }
+  .menu-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    column-gap: 0rem;
+    place-items: center;
+    margin-top: 30px;
+  }
+  
+  .name-price {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  .menu-item {
+    margin: 10px;
+    /* padding-bottom: 10px; */
+  }
+  
+  .menu-item h3 {
+    font-size: calc(1rem + .4vw);
+    color: #aa8453;
+  }
+  
+  .price {
+  
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    margin-top: 1px;
+  }
+  
+  .menu-item p {
+    border-top: 1px dashed #aa8453;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
+
+  /*CSS of RoomDetails.jsx */
+  .room-details-info
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 0;
+  }
+  .room-details-info .small-heading
+  {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+  }
+  .room-details-info p{
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .resto-body-part1
+  {
+    width:67%;
+  }
+  .resto-body-part2
+  {
+    width: 17%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .checking-info
+  {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap:15rem;
+    justify-content: flex-start;
+   
+  }
+  .amenities-list {
+    margin:0;
+  }
+  
+  .amenities-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .amenities-list i {
+    /* Replace this with your custom font icon styles */
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .resto-slider {
+      height: 400px; /* Adjust the height for smaller screens */
+    }
+  
+    .resto-slider .slider::before {
+      background-color: rgba(0, 0, 0, 0.6); /* Optional: Increase opacity for better readability on smaller devices */
+    }
+    .slick-slider .slick-list {
+      background-color: #222222;
+    }
+   .menu-container {
+    width: auto;
+    height: auto;
+    } 
+  
+    .sub-heading {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 25px;
+    }
+  
+    .menu-tab-container {
+      margin-right: 5px;
+    }
+  
+    .menu-tab {
+      width:100%;
+      font-size: 14px;
+      padding: 8px 25px;
+      margin: 0rem;
+    }
+  
+    .menu-content {
+      grid-template-columns: auto;
+      height: auto;
+    }
+  
+    .menu-item {
+      width: 100%;
+      margin: 5px 0;
+    }
+    
+    .center-bottom-button {
+      bottom: 15%; /* Adjust button position */
+      left: 48%;
+      transform: translateX(-50%);
+      width: 40px; /* Adjust width */
+      height: 40px; /* Adjust height */
+      line-height: 40px; /* Center content vertically */
+      text-align: center; /* Center content horizontally */
+    }
+  }
+  
+  /* Tablet Styles (for screens between 768px and 1024px wide) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .sub-heading {
+      font-size: 22px;
+    }
+  
+    h1 {
+      font-size: 32px;
+    }
+  
+    .menu-tab-container {
+      margin-right: 8px;
+    }
+  
+    .menu-tab {
+      font-size: 16px;
+      padding: 10px 18px;
+    }
+  
+    .menu-item {
+      width: calc(50% - 15px);
+      margin: 10px 0;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .resto-slider
+    {
+      height: 80vh;
+    }
+    .resto-slider .slider img {
+      height: 50vh;
+    }
+    .resto-slider .slider::before 
+    {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .menu-container .slick-slider
+     {
+      width: 100%;
+     }
+     .resto-slider {
+      height: auto;
+    }
+    .resturant-info
+    {
+      height: auto;
+      padding: 20px;
+    }
+    .center-bottom-button {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+  

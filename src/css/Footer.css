@@ -1,0 +1,245 @@
+.footer-section
+{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+}
+.footer
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: flex-start; 
+  color:#fff;
+}
+.footer h1
+{
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin: 0 0 20px 0;
+    font-size: 26px;
+}
+.footer p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: #adadad;
+    margin: 0;
+    line-height: 1.8rem;
+}
+.footer .links
+{
+  width:22%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .about-hotel
+{
+  width:36%;
+}
+.about-hotel p{
+  width: 75%;
+  margin-bottom: 20px;
+}
+.footer .location
+{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.links ul {
+  list-style: none; /* Removes the default list bullets */
+  padding: 0; /* Removes the default padding */
+  margin: 0; /* Removes the default margin */
+}
+
+.links li {
+  position: relative; /* Needed for the absolute positioning of the pseudo-element */
+  padding:6px 0;
+
+}
+
+.links a {
+  display: block; /* Makes the anchor tag fill the li for a larger clickable area */
+  transition: transform 0.5s ease, color 0.5s ease; /* Smooth transition for the sliding and color effects */
+  text-decoration: none; /* Removes the underline from the links */
+  font-size: 15px;
+  font-family: 'Barlow', sans-serif;
+  color: #adadad;
+}
+
+.links li:hover a {
+  transform: translateX(20px); /* Moves the text to the right on hover */
+  color: #fff; /* Change text color on hover if needed */
+}
+
+.links li::before {
+  content: '';
+  display: inline-block; 
+  width: 0; 
+  height: 0;
+  border-radius: 50%; 
+  background: transparent;
+  position: absolute;
+  left: 0; 
+  top: 50%;
+  transform: translate(0, -50%); 
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+}
+
+.links li:hover::before {
+  content: '•'; 
+  width: auto; 
+  height: auto; 
+  color: #aa8453;
+  font-size: 25px;
+  line-height: 0;
+}
+.bottom-footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eeebeb;
+  background-color: #1f1d1d;
+  width: 100%;
+  height: 80px;
+  text-transform: capitalize;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.location .call-details img{
+  width: 30px;
+  height: 30px;
+}
+.location .call-details p{
+  font-size: 20px;
+  color:#fff !important;
+  margin-left: 10px;
+}
+.footer .location .call-details
+{
+  margin: 20px 0px;
+  color: #fff;
+}
+.mail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location .mail-id
+{
+  color: #fff !important;
+}
+.mail hr{
+  margin-top: 4px;
+  width: 150px;
+  color: #aa8453;
+}
+.footer .btn-hotel-info {
+  background-color: #ab8a62;
+  padding: 9px 18px;
+  margin-top: 30px;
+  border: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Barlow', sans-serif;
+  color: #fff;
+}
+.footer-section .about-hotel .btn-hotel-info:hover
+{
+    color:#fff;
+    box-shadow: inset 320px 0 0 0 #000;
+}
+.location .social-media-icons {
+    margin-top: 20px;
+ }
+ 
+ .location .social-media-icons a {
+    margin: 0 10px;
+    color: #fff; /* Change color as needed */
+    font-size: 24px; /* Change size as needed */
+    text-decoration: none;
+ }
+
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  .footer-section {
+    height: auto; /* Adjust height for tablet view */
+  }
+
+  .footer {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .footer .links, .footer .about-hotel, .footer .location {
+    width: 80% !important; 
+    margin-bottom: 20px;
+  }
+
+  .about-hotel p, .location p, .footer p {
+    font-size: 14px; 
+  }
+
+  .links li {
+    padding-left: 20px; 
+  }
+
+  .location .call-details img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .location .call-details p {
+    font-size: 18px;
+  }
+
+  .bottom-footer {
+    height: auto; /* Adjust height for content */
+    padding: 10px 0; /* Add some padding */
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .footer .links, .footer .about-hotel, .footer .location {
+    width: 90%; 
+  }
+
+  .footer h1 {
+    font-size: 20px; /* Adjust headings for smaller screens */
+  }
+
+  .about-hotel p, .location p, .footer p {
+    font-size: 13px; /* Further reduce font size for mobile */
+  }
+
+  .links a {
+    font-size: 14px; /* Adjust link font size for mobile */
+  }
+
+  .location .call-details p {
+    font-size: 16px;
+  }
+
+  .location .social-media-icons a {
+    font-size: 20px; /* Adjust social icon size */
+  }
+  .footer-section
+{
+  width: 100%;
+ height: auto !important;
+ padding: 30px 0;
+}
+}

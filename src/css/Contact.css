@@ -1,0 +1,609 @@
+.contact-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('images/section9.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 100px;
+    z-index: 1;
+  }
+  
+  .contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+  
+  .contact-section .contact-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section .contact-info .contact-details {
+    display: flex;
+    justify-content: flex-end;
+    height: 75%;
+  
+  }
+  
+  .contact-section .contact-info .logo-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25%;
+    background-color: white;
+  }
+  
+  .contact-section .form-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* Added to establish a stacking context */
+  }
+  
+  .form-info .formcon {
+    height: 80%;
+    width: 100%;
+  
+  }
+  
+  .contact-section .form-info .form-empty {
+    height: 25%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .logo-carousel img {
+    width: 100px;
+    height: 100px;
+  }
+  .hotel-booking-form {
+    width: 68%;
+    height: 80vh;
+    background-color: #f8f5f0;
+    margin: 40px auto;
+    padding:60px 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    box-sizing: border-box; 
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    padding: 0 5px; /* Adjust this padding as needed */
+    box-sizing: border-box;
+}
+  
+label {
+  display: block;
+  margin-bottom: 3px;
+}
+  
+.form-group input,
+.form-group select {
+  width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+.hotel-booking-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #aa8453;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+  
+  .hotel-booking-form button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .logo-carousel img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .contact-text {
+    width: 80%;
+    padding: 20px;
+    opacity: 1 !important;
+    box-sizing: border-box;
+  }
+  
+  .contact-text p {
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    line-height: 1.25em;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .contact-text .number {
+    margin: -30px 60px;
+  }
+  
+  .call-details p {
+    font-size: 18px;
+  }
+  
+  .footer-section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    color: #fff;
+  }
+  
+  .footer h1 {
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin: 0 0 20px 0;
+    font-size: 26px;
+  }
+  
+  .footer p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: #adadad;
+    margin: 0;
+  }
+  
+  .footer .links {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer .about-hotel {
+    width: 36%;
+  }
+  
+  .about-hotel p {
+    width: 75%;
+  }
+  
+  .footer .location {
+    width: 25%;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    position: relative;
+    padding-left: 0;
+  }
+  
+  .links a {
+    display: block;
+    transition: transform 0.5s ease, color 0.5s ease;
+    text-decoration: none;
+    color: #adadad;
+  }
+  
+  .links li:hover a {
+    transform: translateX(20px);
+    color: #fff;
+  }
+  
+  .links li::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+  }
+  
+  .links li:hover::before {
+    content: '•';
+    /* This is the bullet point character */
+    width: auto;
+    /* Allows the bullet to have width */
+    height: auto;
+    /* Allows the bullet to have height */
+    color: #aa8453;
+    font-size: 25px;
+    /* Size of the bullet */
+    line-height: 0;
+    /* Removes extra height around the bullet */
+  }
+  
+  .bottom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eeebeb;
+    background-color: #1f1d1d;
+    width: 100%;
+    height: 80px;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  
+  .location .call-details img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .location .call-details p {
+    font-size: 20px;
+    color: #fff !important;
+    margin-left: 10px;
+  }
+  
+  .footer .location .call-details {
+    margin: 20px 0px;
+    color: #fff;
+  }
+  
+  .location .mail-id {
+    color: #fff !important;
+  }
+  
+  .location hr {
+    margin-top: 2px;
+    width: 165px;
+    color: #aa8453;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+  
+    .contact-section {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 90vh;
+    }
+  
+    .contact-section .contact-info,
+    .contact-section .form-info {
+      width: 100%;
+      height: auto;
+    }
+   
+    .contact-section .contact-info .contact-details,
+    .contact-section .form-info .formcon {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .contact-section .contact-info .logo-carousel {
+      height: 25%;
+      background-color: white !important;
+    }
+    .hotel-booking-form {
+      width: 65%;
+      height: auto;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, 10%);
+    }
+  
+    .logo-carousel img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .contact-text {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+  
+    .contact-text p {
+      font-size: 20px;
+    }
+  
+    .contact-text .number {
+      margin: -15px 30px;
+    }
+  
+    .call-details p {
+      font-size: 16px;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .footer .links,
+    .footer .about-hotel,
+    .footer .location {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .about-hotel p {
+      width: 100%;
+    }
+  
+    .location .call-details img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .location .call-details p {
+      font-size: 18px;
+    }
+  
+    .location hr {
+      width: 120px;
+    }
+  
+    .bottom-footer {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .slick-slider .slick-list {
+      background-color: #fff;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .hotel-booking-form {
+      width: 80%;
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-section {
+      height: 90vh;
+    }
+  }
+
+
+
+ 
+/* Contact.jsx */
+
+
+  .contact-page-info {
+    width: 100%;
+    padding: 2rem 7rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    box-sizing: border-box;
+  }
+  
+  .contact-body {
+    width: 55%;
+  }
+  .contact-body h3, .contact-form-container h3
+  {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Gilda Display', serif;
+    color: #222;
+    font-weight: 400;
+    line-height: 1.25em;
+  }
+  .contact-body p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .contact-page-info .number
+  {
+    font-size: 22px;
+    letter-spacing: -1px;
+    margin: -25px 10px 30px 10px;
+    color: #AA8453;
+    font-family: 'Barlow', sans-serif;;
+  }
+  .contact-page-info .call-details img{
+    width: 45px;
+    height: 45px;
+    color: #aa8453;
+  }
+  .contact-page-info .address
+  {
+    margin-top: -20px;
+  }
+  .contact-form-container {
+    width: 45%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  
+  .contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .input-group input:hover,
+  .input-group textarea:hover {
+    border-bottom: 1px solid #AA8453;
+  }
+  
+  .input-group input[type=text]:focus, 
+  .input-group input[type=email]:focus, 
+  .input-group input[type=tel]:focus, 
+  .input-group textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #AA8453;
+  }
+  
+  .input-group textarea {
+    height: 60px;
+  }
+  
+  .input-group button {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    background: #AA8453;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .input-group button:hover {
+    background: #bfa67a;
+  }
+  
+  .grid-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+  }
+  
+  .grid-item {
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid-content {
+    padding: 10px;
+  }
+  .google-location
+  {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin: 20px 0 80px 0;
+  }
+  @media screen and (max-width: 480px)
+  {
+    .contact-form-container 
+    {
+      width:100%;
+    }
+    .contact-body 
+    {
+      width: 100%;
+    }
+  }
+ 
+
+@media screen and (max-width: 768px) {
+  .contact-page-info {
+      padding: 2rem 1rem;
+      flex-direction: column;
+      gap: 2rem; 
+  }
+
+  .contact-body, .contact-form-container {
+      width: 100%;
+      margin: 20px auto; 
+  }
+
+  .contact-body h3, .contact-form-container h3 {
+      font-size: 20px; 
+  }
+
+  .contact-body p {
+      font-size: 14px; 
+  }
+
+  .input-group button {
+      width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .contact-page-info {
+      padding: 1rem 0.5rem;
+  }
+
+  .contact-body h3, .contact-form-container h3 {
+      font-size: 18px; 
+  }
+.logo-carousel .slick-list
+{
+  background-color: #fff;
+}
+}

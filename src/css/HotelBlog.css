@@ -1,0 +1,293 @@
+/* HotelContainer.jsx CSS */
+
+.hotel-container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 100px;
+}
+
+.hotel-sections {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 0;
+}
+
+.image-section {
+  width: 50%;
+  box-sizing: border-box;
+  border: none;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 400px;
+  transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.1);
+}
+
+.hotel-info {
+  box-sizing: border-box;
+  border: none;
+  width: 50%;
+  background-color: #f8f5f0;
+  padding: 60px 40px;
+}
+
+.hotel-info h1 {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: 'Gilda Display', serif;
+  margin-bottom: 15px;
+}
+.hotel-info .small-heading
+{
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.btn-hotel-info {
+  background-color: #ab8a62;
+  padding: 9px 20px;
+  margin-top: 10px;
+  border: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.btn-hotel-info:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #000;
+}
+
+
+/* HotelBlog.jsx Css */
+
+
+.slider-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  background-color: #222222;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden; 
+  padding-top: 4rem;
+}
+.slider-container .slider-heading
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  color: #fff;
+}
+.slider-heading h1{
+  font-size:50px;
+ font-weight: 500;
+ text-transform: capitalize;
+ letter-spacing: 2px;
+ font-family: 'Gilda Display', serif;
+ color: #fff;
+}
+.slider-heading p{
+ text-transform: uppercase;
+ letter-spacing: 6px;
+ color: #ac8453;
+ margin-bottom: 0px;
+}
+.slider-row{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.slider-container .News-Slider{
+  width: 85%;
+}
+.News-Slider .slick-arrow
+{
+  display: none !important;
+}
+.news-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.image-slider-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: calc(100% - 20px); /* Adjust for 3-column layout with margins */
+  box-sizing: border-box;
+  
+}
+
+.image-slider-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.image-slider-content {
+  width: 100%;
+  background-color:#fff;
+  color: #000;
+}
+.slider-container .arrow
+{
+
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  gap:76%;
+  width: 100%;
+  padding: 0rem 0.7rem;
+  position: absolute;
+  top:55%;
+}
+.arrows
+{
+  width: 15px;
+  height: 15px;
+}
+.slider-arrows
+{
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.grid-news {
+ 
+    display: flex; 
+  flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center; 
+    height: auto;
+  }      
+
+.news-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  gap: 20px;
+  width: fit-content;  
+  margin: 40px auto;      
+  height: auto; 
+  margin-bottom: 100px;     
+ }
+ 
+ .grid-item {
+   width:350px;
+   display: flex;
+   flex-direction: column; 
+   height: auto;
+ }
+ .grid-item img{
+   width: 100%;
+   height: 300px;
+ }
+ .grid-content {
+
+ background-color: aliceblue;
+ text-align: center;
+ } 
+@media (max-width: 992px) { /* Tablet and smaller */
+  .slider-container {
+    padding: 0 30px 20px 30px; /* Reduce padding */
+  }
+
+  .image-slider-card {
+    width: calc(100% - 10px); /* Show 2 cards per row */
+  }
+
+  .arrows {
+    gap: 80%; /* Adjust arrow spacing */
+  }
+}
+
+@media (max-width: 768px) { 
+  .hotel-container {
+    padding: 50px;
+  }
+
+  .hotel-sections {
+    flex-direction: column;
+  }
+
+  .image-section,
+  .hotel-info {
+    width: 100%;
+  }
+
+  .image-section img {
+    height: auto;
+  }
+
+  #hotel-reverse {
+    flex-direction: column-reverse;
+  }
+  .slider-container {
+    padding: 0 15px 20px 15px;
+  }
+  .news-grid-container
+  {
+    grid-template-columns: auto auto;
+  }
+  .image-card {
+    width: 100%; 
+  }
+
+  .arrows {
+    gap: 40%; 
+  }
+  .slider-container .slider-heading
+{
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-left: 0px;
+}
+}
+@media (max-width: 480px) { 
+  .hotel-container {
+    padding: 30px;
+  }
+
+  .hotel-info {
+    padding: 30px;
+  }
+
+  .hotel-info h1 {
+    font-size: 24px;
+  }
+
+  .btn-hotel-info {
+    padding: 8px 16px;
+  }
+
+.news-grid-container
+  {
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,200 @@
+/* TestimonialSlider.css */
+.swiper {
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .main-testimonial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+    background-image: url('/images/section9.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 60px;
+    color: #fff;
+  }
+  
+  .main-testimonial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Black color with opacity */
+  }
+  
+  .main-testimonial .section-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    z-index: 1;
+  }
+  .main-testimonial hr {
+    
+    border: 1px solid #fff; 
+    width: 40%; 
+    margin: 0px;
+  }
+  .testimonial {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:60%;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+   
+  }
+  
+  .testimonial-services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  
+  }
+  
+  .client-info {
+    display: flex;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    margin-left: 0;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+  }
+  
+  .testimonial-company {
+    color: #ffffff;
+    font-size: 0.8rem;
+  }
+  
+  .star-rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .star {
+    font-size: 18px;
+    color: #E4A853;
+  }
+  
+  .star.active {
+    color: #E4A853;
+  }
+  @media screen and (max-width: 768px) {
+    .hotel-container {
+      padding: 50px;
+    }
+  
+    .hotel-sections {
+      flex-direction: column;
+    }
+  
+    .image-section,
+    .hotel-info {
+      width: 100%;
+    }
+  
+    .image-section img {
+      height: auto;
+    }
+  
+    #hotel-reverse {
+      flex-direction: column-reverse;
+    }
+    .swiper {
+      width: 100%; /* Full width for mobile devices */
+      padding-bottom: 30px; /* Reduced padding */
+  }
+  
+  .swiper-slide {
+      width: 100%; /* Full width slides */
+      height: auto; /* Height adjusted to content */
+  }
+  
+  .main-testimonial {
+      background-attachment: scroll; /* Prevents fixed background on mobile for better performance */
+      padding-top: 30px; /* Reduced padding */
+  }
+  
+  .main-testimonial::before {
+      background: rgba(0, 0, 0, 0.3); /* Increased opacity for better readability on smaller screens */
+  }
+  
+  .section-text {
+      width: 100%; /* Adjusted width for mobile */
+      margin: 0 auto; /* Center content */
+      padding: 0; /* Padding for text */
+      z-index: 1;
+      text-align: center;
+  }
+  
+  .testimonial {
+    
+      text-align: center; /* Center align text for mobile */
+  }
+  
+  .testimonial-services {
+      margin-bottom: 20px; 
+  }
+  
+  .client-info {
+      flex-direction: column; /* Stack client info vertically */
+      align-items: center; /* Center align items */
+  }
+  
+  .testimonial-text {
+      margin-top: 10px; /* Space above the testimonial text */
+      padding: 0 15px; /* Padding for text */
+  }
+  
+  .testimonial-name, .testimonial-company {
+      text-align: center; /* Center align names and companies */
+      font-size: 1rem; /* Adjust font size for readability */
+  }
+  }
+  
+  /* Media query for mobile screens (480px width) */
+  @media screen and (max-width: 480px) {
+    .hotel-container {
+      padding: 30px;
+    }
+  
+    .hotel-info {
+      padding: 30px;
+    }
+  
+    .hotel-info h1 {
+      font-size: 24px;
+    }
+  
+    .btn-hotel-info {
+      padding: 8px 16px;
+    }
+  
+  }

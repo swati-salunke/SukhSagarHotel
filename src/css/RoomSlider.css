@@ -1,0 +1,73 @@
+.roombook-slider {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%; 
+    height: 120vh;
+    background-color: #222222;
+    padding-top: 30px;
+  }
+  
+  .room-section-slider {
+    max-width: 85%; 
+    margin: 0 auto;
+  }
+  
+ .room-slide {
+    position: relative;
+}
+.room-section-images .slick-slider
+{
+width: 80%;
+}
+
+.roombook-slider .room-section-slider .room-book-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+} 
+.room-book-content h2, .room-book-content p,.room-section-slider h1{
+    color: #fff;
+}
+.room-slide img {
+    width: 350px;
+    height:480px;
+}
+.room-section-slider .button button
+{
+    position: relative;
+    top: -13rem;
+    left: 17rem;
+    border: 0.8px solid rgb(216, 216, 216);
+    background-color: transparent;
+    color: white;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+.room-section-slider .small-heading{
+    color:#aa8453;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 480px) {
+ 
+    .roombook-slider
+    {
+        height: 90vh;
+    }
+}
+@media only screen and (max-width: 768px) and (max-width:1024px) {
+    .room-section-slider .button button
+    {
+        left: 13rem;  
+    }
+    .room-slide img {
+        width: 300px;
+    }
+}

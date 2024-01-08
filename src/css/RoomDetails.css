@@ -1,0 +1,96 @@
+
+.room-details-info
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 0;
+  }
+  .room-details-info .small-heading
+  {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+  }
+  .room-details-info p{
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .resto-body-part1
+  {
+    width:67%;
+  }
+  .resto-body-part2
+  {
+    width: 17%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .checking-info
+  {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap:15rem;
+    justify-content: flex-start;
+   
+  }
+  .amenities-list {
+    margin:0;
+  }
+  
+  .amenities-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .amenities-list i {
+    /* Replace this with your custom font icon styles */
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .resto-body-part1, .resto-body-part2 {
+      width: 100%;
+      padding: 0 20px;
+    }
+  .resto-body-part1
+  {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+    .checking-info {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  /* Mobile (e.g., 320px to 768px) */
+  @media screen and (max-width: 480px) {
+    .room-details-info
+    {
+      flex-wrap: wrap;
+    }
+    .resto-body-part1, .resto-body-part2 {
+      width: 100% !important;
+    }
+  
+    .checking-info {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .amenities-list i {
+      font-size: 16px; 
+    }
+  
+  }
+  
