@@ -4,7 +4,7 @@ const Hero = () => {
     <>
     <div className="main-container">
       <div className="image-content">
-        <img src="images/section9.jpg" alt="Description" />
+        <img src="/images/section9.jpg" alt="Description" />
         <div className="overlay-text">
         <span className='star-icon'>
             <i class="ri-star-s-fill"></i>

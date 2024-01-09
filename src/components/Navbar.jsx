@@ -42,7 +42,7 @@ function Navbar() {
           </button>
         )}
         <div className="navbar-logo">
-            <Link to="/"><img src="images/resturant.png" alt="Logo" /></Link>
+            <Link to="/"><img src="/images/resturant.png" alt="Logo" /></Link>
         </div>
         <Link to="/about">About</Link>
         
