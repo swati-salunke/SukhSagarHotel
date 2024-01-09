@@ -7,7 +7,7 @@ import ImageCarousel from '../components/ImageCarousel';
 import ContactContainer from '../components/ContactContainer';
 import RoomBookSlider from '../components/RoomBookSlider';
 import '../css/RoomDetails.css';
-const RoomDeatils = () => {
+const RoomDetails = () => {
     const images = [
         'images/room-suite1.jpg',
         'images/main.jpg',
@@ -92,4 +92,4 @@ const RoomDeatils = () => {
     )
 }
 
-export default RoomDeatils
+export default RoomDetails

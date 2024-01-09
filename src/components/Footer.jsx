@@ -11,7 +11,7 @@ const Footer = () => {
               Welcome to Hotel Sukh-Sagar, a luxurious five-star deluxe hotel in Pune, Maharashtra. Experience our warmth and charm. Book your stay today; we prioritize your comfort.</p>
             <button className='btn-hotel-info'>Explore About Sukh-sagar</button>
           </div>
-          <div class="links">
+          <div className="links">
             <h1>Explore</h1>
             <ul>
               <li><a href="/">Home</a></li>
